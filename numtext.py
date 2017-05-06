@@ -153,7 +153,7 @@ class Numtext:
                 temp = self.numbers[self.textValues.index(curr)] * (10 ** self.powers[desc])
 
                 if (i + 2) < len(parts):
-                    if parts[i] == 'hundred' and parts[i + 2] == 'and':
+                    if parts[i + 1] == 'hundred' and parts[i + 2] == 'and':
                         i += 3
 
                         while i < len(parts) and not parts[i] in self.powers.keys():

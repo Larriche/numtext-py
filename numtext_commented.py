@@ -191,7 +191,7 @@ class Numtext:
                 if (i + 2) < len(parts):
                     # check if the item at the next position is a 'hundred' and the item
                     # two places from the current item is an 'and'
-                    if parts[i] == 'hundred' and parts[i + 2] == 'and':
+                    if parts[i + 1] == 'hundred' and parts[i + 2] == 'and':
                         # advance the index to the position after the 'and'
                         i += 3
 
